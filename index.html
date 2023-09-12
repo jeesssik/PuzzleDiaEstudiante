@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Juego Aleatorio</title>
+</head>
+<body>
+    <h1>Juego Aleatorio</h1>
+    <button onclick="cargarPaginaAleatoria()">Cargar Juego Aleatorio</button>
+    
+    <script>
+        function cargarPaginaAleatoria() {
+            var paginas = ["juego.html", "juego3.html", "juego2.html"];
+            var paginaAleatoria = paginas[Math.floor(Math.random() * paginas.length)];
+
+            // Redirigir al usuario a la página aleatoria
+            window.location.href = paginaAleatoria;
+        }
+    </script>
+</body>
+</html>
